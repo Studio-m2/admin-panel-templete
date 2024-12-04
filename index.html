@@ -1,0 +1,690 @@
+<!DOCTYPE html>
+<html>
+<head>
+<title>
+Page Title
+</title>
+<style>
+*{
+
+margin:0px;
+padding:0px;
+
+}
+.sidebar{
+position:fixed;
+background-color:red;
+display:flex;
+flex-direction:column;
+width:20%;
+height:100vh;
+   background-image: linear-gradient(to right, green , blue);
+font-family: Arial, sans-serif;
+}
+
+.sidebar .logo{
+display:flex;
+height:10vh;
+justify-content:center;
+align-items:center;
+
+}
+
+
+.sidebar li img{
+
+
+width:30px;
+height:30px;
+
+
+
+}
+
+
+.sidebar li{
+display:flex;
+padding:12px 30px;
+justify-content:center;
+align-items:center;
+font-size:24px;
+
+
+}
+.sidebar li:hover{
+transition:0.5s;
+background-color:white;
+color:black
+
+
+
+}
+
+.Containter{
+position:absolute;
+width:80%;
+right:0;
+height:100vh;
+
+
+
+
+}
+
+.Containter header{
+position:fixed;
+width:80%;
+top:0;
+right:0;
+height:10vh;
+justify-content:center;
+align-items:center;
+background-color:white;
+display:flex;
+box-shadow:0px 4px 8px 0px rgb(0,0,0,0.5);
+z-index:1;
+}
+
+.Containter header nav{
+
+width:95%;
+display:flex;
+
+align-items:center;
+
+
+}
+
+.Containter header nav .searchbar input[type="text"]{
+background-color:gray;
+padding:12px;
+width:45%;
+border:none;
+
+}
+
+
+
+
+.Containter header nav .searchbar {
+
+flex:3;
+display:flex;
+justify-content:center;
+
+}
+
+
+.Containter header nav .searchbar button{
+
+height:40px;
+width:40px;
+border:none;
+display:flex;
+justify-content:center;
+align-items:center;
+background-color:gray;
+}
+
+.Containter header nav .searchbar button img{
+
+width:30px;
+height:30px;
+}
+
+
+.Containter header nav .profile {
+flex:1;
+display:flex;
+justify-content:space-between;
+align-items:center;
+
+}
+
+
+
+.Containter header nav .profile  img{
+
+width:30px;
+height:30px;
+}
+
+.Containter header nav .profile .myprofile {
+position:relative;
+width:50px;
+height:40px;
+}
+
+
+
+.Containter header nav .profile .myprofile img{
+position:absolute;
+width:100%;
+height:100%;
+}
+.btn{
+
+padding:3px 5px;
+
+background-color:red;
+color:white;
+text-align:center;
+
+}
+.btn:hover{
+
+padding:5px 10px;
+border:2px solid red;
+background-color:white;
+color:red;
+
+
+}
+
+.Containter .content-1{
+
+position:relative;
+margin-top:10vh;
+
+min-height:90vh;
+
+}
+
+.Containter .content-1 .outer-card{
+
+padding:25px 16px;
+display:flex;
+justify-content:space-between;
+align-items:center;
+
+flex-wrap:wrap;
+
+}
+
+.Containter .content-1 .outer-card .inner-card{
+
+width:200px;
+height:150px;
+ background-image: linear-gradient(to right, green , blue);
+margin:20px 15px;
+
+display:flex;
+align-items:center;
+justify-content:space-around;
+box-shadow:0px 4px 8px 0px rgb(0,0,0,0.5),0px 6px 20px 0px rgb(0,0,0,0.19);
+}
+
+a{text-decoration:none;}
+
+
+h1,h2{color:white;}
+h3{
+
+color:#999;
+
+}
+
+
+.Containter .content-1 .content-2{
+
+
+min-height:60vh;
+display:flex;
+
+justify-content:space-around;
+align-items:flex-start;
+flex-wrap:wrap;
+}
+
+
+.Containter .content-1 .content-2 .payment{
+
+flex:5;
+min-height:50vh;
+
+margin:0px 25px 25px 25px;
+background:white;
+box-shadow:0px 4px 8px 0px rgb(0,0,0,0.5),0px 6px 20px 0px rgb(0,0,0,0.19);
+
+display:flex;
+
+flex-direction:column;
+
+
+}
+
+
+.Containter .content-1 .content-2 .student{
+
+flex:2;
+min-height:50vh;
+
+margin:0px 25px ;
+background:white;
+box-shadow:0px 4px 8px 0px rgb(0,0,0,0.5),0px 6px 20px 0px rgb(0,0,0,0.19);
+display:flex;
+flex-direction:column;
+
+}
+
+.title{
+
+display:flex;
+padding:15px 10px;
+border-bottom:2px solid red;
+align-items:center;
+justify-content:space-around;
+
+}
+
+h2{color:black;}
+
+
+
+table{
+
+padding:10px;
+
+
+
+}
+
+
+
+th,td{
+
+text-align:left;
+padding:10px;
+
+}
+
+
+.Containter .content-1 .content-2 .student table td:nth-child(1) img{
+
+width:40px;
+height:30px;
+}
+
+
+@media screen and (max-width:1050px)
+{
+.sidebar li{
+font-size:18px;
+}
+
+}
+
+
+@media screen and (max-width:940px)
+{
+.sidebar li{
+align-items:center;
+
+
+}
+
+
+.sidebar li:hover{
+background-image: linear-gradient(to right, green , blue);
+border:2px solid white;
+padding:8px 30px;
+
+}
+
+
+.sidebar li img{
+width:30px;
+height:30px;
+
+
+}
+
+
+
+
+
+.sidebar li span{
+display:none;
+
+
+}
+
+.Containter .content-1 .content-2 .payment table th:nth-child(2),.Containter .content-1 .content-2 .payment table td:nth-child(2){
+
+
+display:none;
+
+
+}
+
+
+}
+
+
+@media screen and (max-width:536px)
+{
+.Containter .content-1 .outer-card{
+justify-content:center;
+}
+
+
+.logo h2{ font-size:16px;
+
+
+
+}
+
+
+
+}
+
+
+</style>
+
+<link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
+<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+
+<link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.4.1/css/all.css" integrity="sha384-5sAR7xN1Nv6T6+dT2mhtzEpVJvfS3NScPQTrOxhwjIuvcA67KV2R5Jz6kr4abQsz" crossorigin="anonymous">
+</head>
+<body>
+<div class="sidebar">
+
+<div class="logo"><h2>Logo</h2></div>
+
+
+<ul>
+
+
+<li><i class="material-icons" style="font-size:24px">dashboard</i>&nbsp<span>Dashboard</span></li>
+<li><i class="fa fa-user-graduate" style="font-size:24px"></i>&nbsp<span>Students</span></li>
+<li><i class="fa fa-chalkboard" style="font-size:24px" style="font-size:36px"></i>&nbsp<span>Teachers</span></li>
+<li><i class="fa fa-school" style="font-size:24px"></i>&nbsp<span>Schools</span></li>
+<li><i class="fa fa-dollar" style="font-size:24px"></i>&nbsp<span>Income</span></li>
+<li><i class="fa fa-question-circle" style="font-size:24px"></i>&nbsp&nbsp<span>Help</span></li>
+<li><i class="fa fa-gears" style="font-size:24px"></i>&nbsp<span>Settings</span></li>
+
+</ul>
+
+
+
+
+</div>
+
+<div class="Containter">
+
+
+
+
+<header>
+<nav>      
+<div class="searchbar">
+
+<input type="text" placeholder="Search"/>
+<button type="submit" name="submit"><img src="search.png"  alt="pic" ></button>
+</div>
+
+<div class="profile">
+<a href="" class="btn" >Add New</a>
+<img src="bell.png"  alt="pic" >
+<div class="myprofile">
+<img src="profile.png"  alt="pic" >
+</div>
+
+</div>
+</nav>
+</header>
+
+<div class="content-1">
+<div class="outer-card">
+<div class="inner-card">
+
+<div class="box">
+
+<h1>9000</h1>
+<h3>Students</h3>
+</div>
+
+
+<div class="icon">
+<i class='fas fa-user-graduate' style='font-size:36px'></i>
+
+</div>
+
+</div>
+
+
+
+<div class="inner-card">
+
+<div class="box">
+
+<h1>50</h1>
+<h3>Teachers</h3>
+</div>
+
+
+<div class="icon">
+<i class="fa fa-chalkboard" style="font-size:36px" style="font-size:36px"></i>
+
+</div>
+
+</div>
+
+
+
+
+
+<div class="inner-card">
+
+<div class="box">
+
+<h1>3</h1>
+<h3>Schools</h3>
+</div>
+
+
+<div class="icon">
+<i class="fa fa-school" style="font-size:36px"></i>
+
+</div>
+
+</div>
+
+
+
+
+
+
+<div class="inner-card">
+
+<div class="box">
+
+<h1>$62000</h1>
+<h3>Income</h3>
+</div>
+
+
+<div class="icon">
+<i class="fa fa-dollar" style="font-size:36px"></i>
+
+</div>
+
+</div>
+
+</div>
+
+<div class="content-2">
+<div class="payment">
+
+<div class="title">
+
+<h2>Recent Payment</h2>
+<a href="#" class="btn">View All</a>
+</div>
+
+<table>
+
+<tr>
+<th>Name</th>
+<th>College</th>
+<th>Amount</th>
+<th>Details</th>
+
+</tr>
+
+
+<tr>
+<td>James</td>
+<td>Ali Garh India</td>
+<td>$1200</td>
+<td><a href="#" class="btn">View</a></td>
+</tr>
+
+<tr>
+<td>James</td>
+<td>Ali Garh India</td>
+<td>$1200</td>
+<td><a href="#" class="btn">View </a></td>
+</tr>
+
+<tr>
+<td>James</td>
+<td>Ali Garh India</td>
+<td>$1200</td>
+<td><a href="#" class="btn">View </a></td>
+</tr>
+
+<tr>
+<td>James</td>
+<td>Ali Garh India</td>
+<td>$1200</td>
+<td><a href="#" class="btn">View </a></td>
+</tr>
+
+<tr>
+<td>James</td>
+<td>Ali Garh India</td>
+<td>$1200</td>
+<td><a href="#" class="btn">View </a></td>
+</tr>
+
+<tr>
+<td>James</td>
+<td>Ali Garh India</td>
+<td>$1200</td>
+<td><a href="#" class="btn">View</a></td>
+</tr>
+
+
+
+
+
+
+
+
+
+</table>
+
+
+
+
+
+</div>
+
+<div class="student">
+
+<div class="title">
+
+<h2>Student</h2>
+<a href="#" class="btn">View All</a>
+</div>
+
+
+
+
+<table>
+
+<tr>
+<th>Profile</th>
+<th>Name</th>
+
+<th>Details</th>
+
+</tr>
+
+
+<tr>
+<td><img src="profile.png" alt="pic"/></td>
+<td>James</td>
+
+<td><a href="#" class="btn">View</a></td>
+</tr>
+
+
+<tr>
+<td><img src="profile.png" alt="pic"/></td>
+<td>James</td>
+
+<td><a href="#" class="btn">View</a></td>
+</tr>
+
+
+
+<tr>
+<td><img src="profile.png" alt="pic"/></td>
+<td>James</td>
+
+<td><a href="#" class="btn">View</a></td>
+</tr>
+
+
+<tr>
+<td><img src="profile.png" alt="pic"/></td>
+<td>James</td>
+
+<td><a href="#" class="btn">View</a></td>
+</tr>
+
+
+
+
+
+
+
+
+</table>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+</div>
+
+
+</div>
+
+</div>
+
+</div>
+
+
+</body>
+</html>
